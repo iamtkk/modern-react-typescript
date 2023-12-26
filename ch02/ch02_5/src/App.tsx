@@ -20,10 +20,10 @@ function App() {
       <EventBubbling />
       <StopPropagation />
       <VariousInputs />
-      {/* <OnChange />
+      <OnChange />
       <FileInput />
       <DragDrop />
-      <FileDrop /> */}
+      <FileDrop />
     </div>
   )
 }
