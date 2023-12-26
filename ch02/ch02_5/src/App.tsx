@@ -19,8 +19,8 @@ function App() {
       <DispatchEvent /> */}
       <EventBubbling />
       <StopPropagation />
-      {/* <VariousInputs />
-      <OnChange />
+      <VariousInputs />
+      {/* <OnChange />
       <FileInput />
       <DragDrop />
       <FileDrop /> */}
