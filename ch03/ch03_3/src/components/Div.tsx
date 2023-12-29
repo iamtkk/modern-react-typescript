@@ -6,13 +6,22 @@ export type ReactDivProps = DetailedHTMLProps<
   HTMLDivElement
 >
 
-export type DivProps = ReactDivProps & PropsWithChildren<WidthHeight>
+export type DivProps = ReactDivProps & PropsWithChildren<WidthHeight> & {src?: string}
 
-export const Div: FC<DivProps> = ({width, height, style: _style, ...props}) => {
+export const Div: FC<DivProps> = ({
+  width,
+  height,
+  style: _style,
+  src,
+  className: _className,
+  ...props
+}) => {
   const style = {
     ..._style,
     width,
-    height
+    height,
+    backgroundImage: src ? `url(${src})` : undefined
   }
-  return <div {...props} style={style} />
+  const className = [src && 'bg-gray-300', _className].join(' ')
+  return <div {...props} className={className} style={style} />
 }
