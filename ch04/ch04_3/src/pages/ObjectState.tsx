@@ -27,7 +27,7 @@ export default function ObjectState() {
 
   return (
     <section className="mt-4">
-      <Title>BasicForm</Title>
+      <Title>ObjectState</Title>
       <div className="flex justify-center mt-4">
         <form onSubmit={onSubmit}>
           <div className="form-contrl">
