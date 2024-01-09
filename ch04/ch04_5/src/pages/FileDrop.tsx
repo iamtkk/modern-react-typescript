@@ -39,8 +39,6 @@ export default function FileDrop() {
       e.preventDefault()
       setError(null)
       const files = e.dataTransfer?.files
-      console.log('files : ', files)
-      console.log('Array.from files : ', Array.from(files))
       files && makeImageUrls(Array.from(files))
     },
     [makeImageUrls]
